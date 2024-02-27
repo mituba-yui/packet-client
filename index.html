@@ -3,20 +3,30 @@
   <meta charset="UTF-8">
   <head>
     <title>test</title>
+    <style>
+      .a {
+        background-color: #000 ;
+      }
+    </style>
   </head>
   <body>
-    <form>
-      <input id="a">
-      <input id="b">
-      <span id="c"></span>
-      <script>
-        let x = document.getElementById('a');
-        document.addEventListener('keyup',function() {
-          var r = parseInt(x.value) * 7 ;
-          document.getElementById('c').textContent = r ;
-        }
-       );
-      </script>
-    </form>
+    <div class="a">
+      <form>
+        <center>
+          <input id="a"><br>
+          <input id="b"><br>
+          <span id="c"></span>
+          <script>
+            let x = document.getElementById('a');
+            document.addEventListener(
+              'keyup',function() {
+                var r = parseInt(x.value) * 7 ;
+                document.getElementById('c').textContent = r ;
+              }
+            );
+          </script>
+        </center>
+      </form>
+    </div>
   </body>
 </html>
