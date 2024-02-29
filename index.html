@@ -5,10 +5,20 @@
     <title>test</title>
     <style>
       .background{
-        background-image: url("画像url");
+        background-image: url("bg/bg_main_screen.png");
         background-size: cover;
         background-position: center;
-        min-height:100vh ;}
+        min-height:100vh;
+      }
+
+      @media (max-width: 768px){
+        .background{
+          background-image: url("bg/bg_main_screen_mobile.png");
+          background-size: cover;
+          background-position: center;
+          min-height:80vh;
+        }
+      }
     </style>
   </head>
   <body bgcolor="#000000">
